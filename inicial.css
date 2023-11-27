@@ -450,7 +450,7 @@ footer img {
   transform: translateX(20%);
 }
 .containerces {
-  height: 230vh;
+  height: fit-content;
   background-color: #1e1e1e;
   color: #f3f3f3;
 }
