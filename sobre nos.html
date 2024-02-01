@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toca do Coelho</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Lato|Fjalla+One|Montserrat|Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sobre nos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="img/toca-do-coelho_logo copy1.jpg">
+
+</head>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="links">
+                <a href="sobre nos.html"><li id="direitai">Sobre nós</li></a>
+                <a href="cardapio.html"><li id="direitas">Cardápio</li></a>
+                <a href="reservas.html"><li id="esquerdac">Reservas</li></a>
+                <a href="fale conosco.html"><li id="esquerdar">Fale Conosco</li></a>
+            </ul>
+
+            <a href="inicial.html"><img src="img/toca-do-coelho_logo copy.png" alt="" class="logo"></a>
+              
+            <div class="toggle_btn">
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="sobre nos.html">Sobre nós</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="fale conosco.html" class="action_btn">Fale Conosco!</a></li>
+        </div>
+    </header>
+<main>
+    <br><br><br><br>
+    <div class="container">
+        <div class="txt">
+            A Toca do Coelho é um projeto criado pelos alunos Gabrielle Urbano, Antonio Garcia, Alissia Coelho, Jean Marcel e João Vitor. Este empreendimento é uma hamburgueria encantadora localizada na zona leste de São Paulo, em proximidade ao metrô Penha.
+
+            A Toca é uma hamburgueria que mergulha de cabeça no universo de "Alice no País das Maravilhas", proporcionando aos seus clientes uma experiência única. Nossa hamburgueria é conhecida por oferecer bebidas exóticas, lanches que parecem ter saído de outra realidade e, claro, muita diversão proporcionada pela nossa equipe incrivelmente animada.
+            
+            Gabrielle Urbano, nossa backend favorita, é reconhecida por sua gentileza, amor e inteligência. Antonio Garcia é o frontend de outro mundo, com seu senso de humor único e uma inteligência inigualável. Alissia Coelho é a melhor marketeira de todos, conhecida por sua afetuosidade, personalidade forte e inteligência afiada. Jean Marcel, nosso doidinho favorito, é uma mente brilhante, sempre fazendo todos rirem com seu senso de humor peculiar.
+            
+            Se você estiver procurando por uma experiência gastronômica única, acompanhada de um ambiente mágico e uma equipe animada, não deixe de visitar a Toca do Coelho. Estamos ansiosos para recebê-lo e proporcionar uma experiência que o transportará para o mundo das maravilhas a cada mordida e gole. Venha fazer parte dessa aventura!
+          </div>
+        </div>
+
+    </main>
+    <br><br><br><br>
+    <footer>
+        <br><br>
+        <h1>Contato</h1> <br><br>
+        <p>Caso o coelho não esteja por perto, tente conversar com ele pelo Whatsapp ou pelo Instagram: </p> <br><br>
+        <p class="branco">11 95073-7272 - tocadocoelho_ca</p> <br>
+        <a href="https://wa.me/5511950737272"><img src="img/whatsapp.png"></a>
+        <a href="https://www.instagram.com/tocadocoelho_ca/"><img src="img/instagram.png"></a>
+    </footer>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        let menuOpen = false;
+        menuBtn.addEventListener('click', () => {
+            if (!menuOpen) {
+                menuBtn.classList.add('open');
+                menuOpen = true;
+            } else {
+                menuBtn.classList.remove('open');
+                menuOpen = false;
+            }
+        });
+        
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+        
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+        
+            toggleBtnIcon.className = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars';
+        }
+    </script>
+</body>
+
+</html>
